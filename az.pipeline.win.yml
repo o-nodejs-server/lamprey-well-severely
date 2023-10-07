@@ -11,7 +11,7 @@ jobs:
    - job: oexpresstelegrafsocketio
      displayName: oexpresstelegrafsocketio
      pool:
-        vmImage: window-latest
+        vmImage: windows-latest
      steps:
         - checkout: self
           fetchDepth: 1
