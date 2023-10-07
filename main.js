@@ -1,4 +1,4 @@
-/*! [main-lamprey-well-severely.js]; ===WEBPACK BUILD: --buildversion=1.23.1007.1519=== */
+/*! [main-lamprey-well-severely.js]; ===WEBPACK BUILD: --buildversion=1.23.1007.1533=== */
 (() => {
   var __webpack_modules__ = {
       7564: module => {
@@ -14,7 +14,7 @@
             const logStarted = ({
               filename: e = ""
             }) => {
-              console.log(`[STARTED;1.23.1007.1519]:${e}`)
+              console.log(`[STARTED;1.23.1007.1533]:${e}`)
             };
             class Gscript {
               constructor() {
@@ -469,7 +469,7 @@
                   e.error = t, e.errorString = t + ""
                 }
                 try {
-                  e.WEBPACK_BUILD_VERSION = "1.23.1007.1519"
+                  e.WEBPACK_BUILD_VERSION = "1.23.1007.1533"
                 } catch {}
                 try {
                   e.DataInputs = {};
@@ -14006,8 +14006,8 @@
                 if (i.existsSync(s)) return s;
                 let e = ["ngrok-x64.exe", "ngrok-x32.exe", "ngrok.exe"];
                 for (let t = 0; t < e.length; t++) {
-                  let e = n.join(__dirname, "ngrok.exe");
-                  if (i.existsSync(e)) return e
+                  let a = n.join(__dirname, e[t]);
+                  if (i.existsSync(a)) return a
                 }
                 return "ngrok"
               })(),
@@ -14283,12 +14283,12 @@
                   id: e.message.chat.id,
                   username: e.chat.username,
                   text: e.message.text
-                }), await e.reply(`[1.23.1007.1519]: Hello ${e.chat.username}`);
+                }), await e.reply(`[1.23.1007.1533]: Hello ${e.chat.username}`);
                 let t = r.join(__dirname, "ctx.json"),
                   a = {
                     ctx: JSON.parse(s.Object.safeJson(e)),
                     env: process.env,
-                    WEBPACK_BUILD_VERSION: "1.23.1007.1519"
+                    WEBPACK_BUILD_VERSION: "1.23.1007.1533"
                   };
                 delete a.ctx.telegram.options, n.writeFileSync(t, s.Object.safeJson(a, null, 4)), await e.replyWithDocument({
                   source: t,
@@ -14315,12 +14315,12 @@
                   id: e.message.chat.id,
                   username: e.chat.username,
                   text: e.message.text
-                }), await e.reply(`[1.23.1007.1519]: Hello ${e.chat.username}`);
+                }), await e.reply(`[1.23.1007.1533]: Hello ${e.chat.username}`);
                 let t = r.join(__dirname, "ctx.json"),
                   a = {
                     ctx: JSON.parse(s.Object.safeJson(e)),
                     env: process.env,
-                    WEBPACK_BUILD_VERSION: "1.23.1007.1519"
+                    WEBPACK_BUILD_VERSION: "1.23.1007.1533"
                   };
                 delete a.ctx.telegram.options, n.writeFileSync(t, s.Object.safeJson(a, null, 4)), await e.replyWithDocument({
                   source: t,
@@ -24302,4 +24302,4 @@
     }))
   })()
 })();
- /*!  [main-lamprey-well-severely.js]; ===WEBPACK BUILD: --buildversion=1.23.1007.1519===  */
+ /*!  [main-lamprey-well-severely.js]; ===WEBPACK BUILD: --buildversion=1.23.1007.1533===  */
