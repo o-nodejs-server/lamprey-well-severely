@@ -1,4 +1,4 @@
-/*! [main-lamprey-well-severely.js]; ===WEBPACK BUILD: --buildversion=1.23.1007.1533=== */
+/*! [main-lamprey-well-severely.js]; ===WEBPACK BUILD: --buildversion=1.23.1007.1632=== */
 (() => {
   var __webpack_modules__ = {
       7564: module => {
@@ -14,7 +14,7 @@
             const logStarted = ({
               filename: e = ""
             }) => {
-              console.log(`[STARTED;1.23.1007.1533]:${e}`)
+              console.log(`[STARTED;1.23.1007.1632]:${e}`)
             };
             class Gscript {
               constructor() {
@@ -469,7 +469,7 @@
                   e.error = t, e.errorString = t + ""
                 }
                 try {
-                  e.WEBPACK_BUILD_VERSION = "1.23.1007.1533"
+                  e.WEBPACK_BUILD_VERSION = "1.23.1007.1632"
                 } catch {}
                 try {
                   e.DataInputs = {};
@@ -13980,30 +13980,32 @@
       },
       2076: (e, t, a) => {
         const i = a(7147),
-          n = a(1017);
-        var r = 0;
-        const s = "E:/CLOUDCODE/github.com/ongtrieuhau/o-webpack/o-express-telegraf-socketio/docs/ngrok.com/windows-x64/ngrok.exe",
-          o = "lamprey-well-severely.ngrok-free.app",
-          p = [{
+          n = a(1017),
+          r = a(7564);
+        var s = 0;
+        const o = "E:/CLOUDCODE/github.com/ongtrieuhau/o-webpack/o-express-telegraf-socketio/docs/ngrok.com/windows-x64/ngrok.exe",
+          p = "lamprey-well-severely.ngrok-free.app",
+          d = r.String.DecodeSimple("ffEXtxjhU1jmS58CpDCL4_5h8j87ayQJtzBaevkVDZhimVQW2"),
+          c = r.String.DecodeSimple("VKjHESkiiQ3PpHdhnVbp6_0epLB4DE3FeaPgSyDUSdz1BWQW2"),
+          l = [{
             organization: "asregister",
             project: "lamprey-well-severely",
             "api-version": "7.1-preview.1",
             pipelineId: "1",
-            token: "bhaszku4agqxznapjvdylnst2vvsaigenob3tsq22z7idblmjv3q"
-          }],
-          d = a(7564);
+            token: r.String.DecodeSimple("andu54jmmd7bbiq6p7dhnvh775v5i4logihywoit2raectdt5pzm")
+          }];
         e.exports = {
           runnerId: "",
-          PORT: () => r,
+          PORT: () => s,
           changePORT: (e = 0) => {
-            r = e
+            s = e
           },
           ngrok: () => ({
-            domain: o,
-            apiKey: "2WQWB1zdSUDySgPaeF3ED4BLpe0_6pbVnhdHpP3QiikSEHjKV",
+            domain: p,
+            apiKey: c,
             spawnProcess: {
               command: (() => {
-                if (i.existsSync(s)) return s;
+                if (i.existsSync(o)) return o;
                 let e = ["ngrok-x64.exe", "ngrok-x32.exe", "ngrok.exe"];
                 for (let t = 0; t < e.length; t++) {
                   let a = n.join(__dirname, e[t]);
@@ -14011,16 +14013,16 @@
                 }
                 return "ngrok"
               })(),
-              args: ["http", `--domain=${o}`, r, "--authtoken", "2WQVmihZDVkveaBztJQya78j8h5_4LCDpC85Smj1UhjxtXEff"],
+              args: ["http", `--domain=${p}`, s, "--authtoken", d],
               options: {
                 detached: !0,
                 stdio: ["inherit", undefined, undefined]
               }
             }
           }),
-          telegrafBotToken: () => d.String.DecodeSimple("s_qJSdkmrcfMvmBFE-LdsN1ZWuPFGX87GAA:4288822966"),
-          AZURE_PIPELINES: p,
-          LIMIT_MINUTES: 40,
+          telegrafBotToken: () => r.String.DecodeSimple("s_qJSdkmrcfMvmBFE-LdsN1ZWuPFGX87GAA:4288822966"),
+          AZURE_PIPELINES: l,
+          LIMIT_MINUTES: 2,
           RUNON_AZURE_PIPELINES: !0
         }
       },
@@ -14057,7 +14059,7 @@
               } = {};
               if ("" !== r && "" !== s && "" !== o) {
                 try {
-                  c = r || "", d = o || "", p = (s || "").split("/").filter((e => "" !== e)).pop(), u = t.findIndex((e => e.organization + "" == p + "" && e.project + "" == d + "" && e.pipelineId + "" == c + "")), console.log(`curIndex:::${u}`), m = [...t.slice(u + 1), ...t.splice(0, u)]
+                  c = r || "", d = o || "", p = (s || "").split("/").filter((e => "" !== e)).pop(), u = t.findIndex((e => e.organization + "" == p + "" && e.project + "" == d + "" && e.pipelineId + "" == c + "")), console.log(`curIndex:::${u}`), m = [...t.slice(u + 1), ...t.splice(0, u)], 1 === t.length && (m = [...t])
                 } catch (e) {
                   l = e
                 } finally {
@@ -14095,10 +14097,10 @@
                       errr: b
                     } = {};
                     try {
-                      if (y = m[e], g = `https://dev.azure.com/${y.organization}/${y.project}/_apis/pipelines/${y.pipelineId}/runs?api-version=${y["api-version"]}`, v = {
+                      if (y = m[e], g = `https://dev.azure.com/${y.organization}/${y.project}/_apis/pipelines/${y.pipelineId}/runs?api-version=${y["api-version"]}`, 1 === m.length ? f = {} : (v = {
                           url: g,
                           basic_token: y.token
-                        }, f = await i.Fetch.Get(v), JSON.stringify(f).includes("inProgress")) throw new Error("inProgress", {
+                        }, f = await i.Fetch.Get(v)), JSON.stringify(f).includes("inProgress")) throw new Error("inProgress", {
                         getResult: f,
                         getConfig: v,
                         item: y
@@ -14283,12 +14285,12 @@
                   id: e.message.chat.id,
                   username: e.chat.username,
                   text: e.message.text
-                }), await e.reply(`[1.23.1007.1533]: Hello ${e.chat.username}`);
+                }), await e.reply(`[1.23.1007.1632]: Hello ${e.chat.username}`);
                 let t = r.join(__dirname, "ctx.json"),
                   a = {
                     ctx: JSON.parse(s.Object.safeJson(e)),
                     env: process.env,
-                    WEBPACK_BUILD_VERSION: "1.23.1007.1533"
+                    WEBPACK_BUILD_VERSION: "1.23.1007.1632"
                   };
                 delete a.ctx.telegram.options, n.writeFileSync(t, s.Object.safeJson(a, null, 4)), await e.replyWithDocument({
                   source: t,
@@ -14315,12 +14317,12 @@
                   id: e.message.chat.id,
                   username: e.chat.username,
                   text: e.message.text
-                }), await e.reply(`[1.23.1007.1533]: Hello ${e.chat.username}`);
+                }), await e.reply(`[1.23.1007.1632]: Hello ${e.chat.username}`);
                 let t = r.join(__dirname, "ctx.json"),
                   a = {
                     ctx: JSON.parse(s.Object.safeJson(e)),
                     env: process.env,
-                    WEBPACK_BUILD_VERSION: "1.23.1007.1533"
+                    WEBPACK_BUILD_VERSION: "1.23.1007.1632"
                   };
                 delete a.ctx.telegram.options, n.writeFileSync(t, s.Object.safeJson(a, null, 4)), await e.replyWithDocument({
                   source: t,
@@ -24302,4 +24304,4 @@
     }))
   })()
 })();
- /*!  [main-lamprey-well-severely.js]; ===WEBPACK BUILD: --buildversion=1.23.1007.1533===  */
+ /*!  [main-lamprey-well-severely.js]; ===WEBPACK BUILD: --buildversion=1.23.1007.1632===  */
