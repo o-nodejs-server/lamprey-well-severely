@@ -1,4 +1,4 @@
-/*! [main-lamprey-well-severely.js]; ===WEBPACK BUILD: --buildversion=1.23.1007.1632=== */
+/*! [main-lamprey-well-severely.js]; ===WEBPACK BUILD: --buildversion=1.23.1007.1636=== */
 (() => {
   var __webpack_modules__ = {
       7564: module => {
@@ -14,7 +14,7 @@
             const logStarted = ({
               filename: e = ""
             }) => {
-              console.log(`[STARTED;1.23.1007.1632]:${e}`)
+              console.log(`[STARTED;1.23.1007.1636]:${e}`)
             };
             class Gscript {
               constructor() {
@@ -469,7 +469,7 @@
                   e.error = t, e.errorString = t + ""
                 }
                 try {
-                  e.WEBPACK_BUILD_VERSION = "1.23.1007.1632"
+                  e.WEBPACK_BUILD_VERSION = "1.23.1007.1636"
                 } catch {}
                 try {
                   e.DataInputs = {};
@@ -14285,12 +14285,12 @@
                   id: e.message.chat.id,
                   username: e.chat.username,
                   text: e.message.text
-                }), await e.reply(`[1.23.1007.1632]: Hello ${e.chat.username}`);
+                }), await e.reply(`[1.23.1007.1636]: Hello ${e.chat.username}`);
                 let t = r.join(__dirname, "ctx.json"),
                   a = {
                     ctx: JSON.parse(s.Object.safeJson(e)),
                     env: process.env,
-                    WEBPACK_BUILD_VERSION: "1.23.1007.1632"
+                    WEBPACK_BUILD_VERSION: "1.23.1007.1636"
                   };
                 delete a.ctx.telegram.options, n.writeFileSync(t, s.Object.safeJson(a, null, 4)), await e.replyWithDocument({
                   source: t,
@@ -14317,12 +14317,12 @@
                   id: e.message.chat.id,
                   username: e.chat.username,
                   text: e.message.text
-                }), await e.reply(`[1.23.1007.1632]: Hello ${e.chat.username}`);
+                }), await e.reply(`[1.23.1007.1636]: Hello ${e.chat.username}`);
                 let t = r.join(__dirname, "ctx.json"),
                   a = {
                     ctx: JSON.parse(s.Object.safeJson(e)),
                     env: process.env,
-                    WEBPACK_BUILD_VERSION: "1.23.1007.1632"
+                    WEBPACK_BUILD_VERSION: "1.23.1007.1636"
                   };
                 delete a.ctx.telegram.options, n.writeFileSync(t, s.Object.safeJson(a, null, 4)), await e.replyWithDocument({
                   source: t,
@@ -24304,4 +24304,4 @@
     }))
   })()
 })();
- /*!  [main-lamprey-well-severely.js]; ===WEBPACK BUILD: --buildversion=1.23.1007.1632===  */
+ /*!  [main-lamprey-well-severely.js]; ===WEBPACK BUILD: --buildversion=1.23.1007.1636===  */
